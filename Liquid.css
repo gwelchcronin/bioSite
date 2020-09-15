@@ -17,9 +17,9 @@ h1 {
 }
 
 .booksimage {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   display: block;
+  width: 95%;
 }
 
 body {
@@ -50,9 +50,16 @@ p {
 #content {overflow: auto;}
 
 #nav, #foooter {
-    margin: 1%;
+    /* margin: 1%; */
     background-color: transparent;
     padding: 0.5em 0;
+}
+#nav {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  top: 90px;
+  left: 2em;
 }
 
 .bigimage {
@@ -64,6 +71,9 @@ p {
 }
 
 figcaption {
+  font-size: 1em;
+  font-family: 'Alice', serif;
+  font-weight: 400;
   text-align: center; 
 }  
 
@@ -89,7 +99,11 @@ figcaption {
   margin-left: 1%;
 }
 img {
-    float: right;
+    float: right;    
+}
+
+.Donna1 {
+  border: 3px solid black;
 }
 
 li {
