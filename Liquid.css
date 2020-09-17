@@ -1,33 +1,50 @@
+/* colors
+#394D56
+#EAE6DA
+#A4B7BA
+#C79A3F
+#EAE7DA
+#C2B2A4 */
+
 #header {
-  display: block;
-  height: 150px;
+  width: 100%;
+  height: 140px;
   background-color:  #394D56;
   color: #EAE6DA;
-  margin: 1%;
+  margin: auto;
 }
 
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 3.5em; /* 40px/16=2.5em */
   font-weight: 700;
-  margin-left: 1em;
+  margin-left: .75em;
   margin-top: 1em;
   margin-bottom: 0em;
   padding-top: .5em;
 }
-
+.bigimage {
+  width: 100%;
+}
 .booksimage {
-  margin: auto;
-  display: block;
+  margin-top: 3em;
+  margin-right: 2.5%;
+  margin-bottom: 3em;
+  margin-left: 1%;
   width: 95%;
 }
-
+#caption {
+  width: 100%;
+  height: 2em;
+  margin: 0;
+  color: black;
+  background-color: #C79A3F;
+}
 body {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     background-color: #EAE6DA;
 }
-
 p {
     font-size: 1em;
     font-family: 'Alice', serif;
@@ -47,43 +64,47 @@ p {
     margin-bottom: .5em; 
   }
 
-#content {overflow: auto;}
-
-#nav, #foooter {
-    /* margin: 1%; */
-    background-color: transparent;
-    padding: 0.5em 0;
-}
-#nav {
-  position: absolute;
-  right: 1em;
-  bottom: 1em;
-  top: 90px;
-  left: 2em;
+#content {
+  overflow: auto;
 }
 
-.bigimage {
-  /* display: block;  */
-  margin-top: 3em;
-  margin-right: auto;
-  margin-bottom: 1%;
-  margin-left: auto;
-}
-
-figcaption {
-  font-size: 1em;
+button {
+  width: 140px;
+  height: 50px;
+  background-color: #EAE6DA; 
+  font-size: 1.75em;
   font-family: 'Alice', serif;
-  font-weight: 400;
-  text-align: center; 
-}  
-
-#nav {
+  border: none;
+  color: black;
+  margin-left: -.5em;
+  margin-top: -1.5em;
+  margin-right: 1em;
+  margin-bottom: 4em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
   float: right;
-  /* text-align: center; */
-  margin-top: 0;
 }
-#footer {
-  float: center;
+button:hover {
+  color:#C79A3F;
+  background-color: #EAE6DA;
+  text-decoration: none;
+}
+button:visited {
+  color: #A4B7BA;
+  background-color: #EAE6DA;
+  text-decoration: none;
+}
+.footerleft {
+  float: left;
+  margin-left: .75em;
+  margin-top: .5em;
+}
+.footerright {
+  float: right;
+  margin-right: .75em;
+  margin-top: .5em;
 }
 .column1, .column3, .column5, .column7{
     width: 13%;
@@ -101,11 +122,63 @@ figcaption {
 img {
     float: right;    
 }
+/* figcaption {
+  color: #EAE6DA;
+} */
+
+/* 
+.wp-caption {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  }
+  .wp-caption img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  }
+  .wp-caption-text {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  padding: 0.75em 1em;
+  font-weight: 700;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.7);
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  }
+  .wp-caption:hover .wp-caption-text {
+  opacity: 1;
+  }
+ */
+
 
 .Donna1 {
   border: 3px solid black;
 }
 
+hr {
+  width: 100%; margin-top: -2em;  margin-left: auto; margin-right: auto; margin-bottom: 3em; height: 2em; background-color: #C79A3F;
+}
+.article {
+    height: 15em;
+    margin-bottom: 2em;
+    background-color: transparent;
+}
+#footer {
+  margin-top: 5em;
+  display: block;
+  height: 75px;
+  background-color:  #394D56;
+  float: center;
+}
+/* 
 li {
     display: inline;
     color: #C79A3F;
@@ -115,16 +188,8 @@ li {
     line-height: 1.3em;
     max-height: 125px;
     padding: 1em;
-}
-hr {
-  width: 100%; margin-top: -2em;  margin-left: auto; margin-right: auto; margin-bottom: 3em; height: 2em; background-color: #C79A3F;
-}
-.article {
-    height: 15em;
-    margin-bottom: 2em;
-    background-color: #EAE6DA;
-}
-  a:link {
+} */
+  /* a:link {
     color:#C79A3F;
     background-color: #EAE6DA;
     text-decoration: none;
@@ -139,13 +204,17 @@ hr {
     color: #A4B7BA;
     background-color: #EAE6DA;
     text-decoration: none;
-  }
-  #footer {
-    margin-top: 5em;
-    margin-bottom: .5em;
-    text-align: center;
-    display: block;
-    height: 50px;
-    background-color:  #394D56;
-    color: #EAE6DA;
-  }
+  } */
+/* button.topnav {
+  margin-left: -.5em;
+  margin-top: -1.5em;
+  margin-right: 1em;
+  margin-bottom: 4em;
+  float: right;
+} */
+/* figcaption {
+  font-size: 1em;
+  font-family: 'Alice', serif;
+  font-weight: 400;
+  text-align: center; 
+}   */
