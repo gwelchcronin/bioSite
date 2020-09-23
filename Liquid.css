@@ -6,14 +6,89 @@
 #EAE7DA
 #C2B2A4 */
 
+/* size of page and color */
+body {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #EAE6DA;
+}
+
+/* header styling */
 #header {
   width: 100%;
   height: 140px;
   background-color:  #394D56;
   color: #EAE6DA;
-  margin: auto;
+  margin: 0 auto;
+}
+/* styling of first large image */
+.bigimage {
+  width: 100%;
+  margin-bottom: 0px;
+}
+.booksimage {
+  margin-top: 4em;
+  margin-right: 2.5%;
+  margin-bottom: -.5em;
+  margin-left: 1%;
+  width: 95%;
 }
 
+/* styling of caption text */
+#caption {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em; /* 40px/16=2.5em */
+  font-weight: 400;
+  width: 100%;
+  height: auto;
+  color: #394D56;
+  padding-top:1%;
+  padding-left: 6%;
+  background-color: transparent;
+}
+
+/* horizontal rule, bookshelf styling */
+hr {
+  width: 100%;  
+  margin-left: auto; 
+  margin-right: auto;  
+  height: 2em; 
+  background-color: #C79A3F;
+}
+
+/* page styling after header and large image */
+#content {
+  height: 800px;
+}
+/* position of the horizontal rule - bookshelves */
+.hr1  {
+  margin-top: -2em; 
+  margin-bottom: 10em;
+}
+.hr2 {
+  margin-top: -2em; 
+  margin-bottom: 10em;
+}
+.hr3 {
+  margin-top: -2em; 
+  margin-bottom: 0em;
+}
+
+  /* size of containers for images and narrative text */
+  .article {
+    height: 225px;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: -3%;
+    margin-left: 2%;
+    background-color: transparent;
+  }
+ 
+
+/* TEXT STYLING */
+
+/* styling of header text */
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 3.5em; /* 40px/16=2.5em */
@@ -23,38 +98,18 @@ h1 {
   margin-bottom: 0em;
   padding-top: .5em;
 }
-.bigimage {
-  width: 100%;
-}
-.booksimage {
-  margin-top: 3em;
-  margin-right: 2.5%;
-  margin-bottom: 3em;
-  margin-left: 1%;
-  width: 95%;
-}
-#caption {
-  width: 100%;
-  height: 2em;
-  margin: 0;
-  color: black;
-  background-color: #C79A3F;
-}
-body {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #EAE6DA;
-}
+
+/* normal text (narrative) styling */
 p {
     font-size: 1em;
     font-family: 'Alice', serif;
     font-weight: 400;
-    line-height: 1.3em;
+    line-height: 1.6em;
     max-height: 125px;
     padding: 1em;
     overflow:scroll;
 }
-
+/* styling of first word in each narrative column */
 .firstword {
   color: #C79A3F;
     font-size: 1.875em; /* 30px/16=1.875em */
@@ -64,10 +119,63 @@ p {
     margin-bottom: .5em; 
   }
 
-#content {
-  overflow: auto;
+/* styling of book club and book list in narrative column4 */
+.colortext {
+  color: #C79A3F;
+  font-weight: bolder;
+  }
+
+
+/* photo columns */
+.column1, .column3, .column5, .column7{
+  width: 10%;
+  float: left;
 }
 
+/* narrative columns */
+.column2, .column4, .column6, .column8 {
+  width: 32%;
+  float: left;
+}
+
+/* spacing between the columns vertically */
+.column1, .column2, .column3, .column4 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-bottom: -.5em;
+  margin-top: 5em;
+}
+
+.column5, .column6, .column7, .column8 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-bottom: -1em;
+  margin-top: 5em;
+}
+
+/* image position */
+img {
+  float: right;
+}
+
+/* image styling */
+.Donna1 {
+  border: 3px solid black;
+}
+
+
+
+/* styling of footer */
+#footer {
+    margin-top: 20em;
+    display: block;
+    height: 75px;
+    background-color:  #394D56;
+    overflow: hidden;
+  /* float: center; */
+}
+
+/* button styling for top and footer nav */
 button {
   width: 140px;
   height: 50px;
@@ -96,32 +204,19 @@ button:visited {
   background-color: #EAE6DA;
   text-decoration: none;
 }
+/* footer book club button */
 .footerleft {
   float: left;
   margin-left: .75em;
   margin-top: .5em;
 }
+/* footer book list button */
 .footerright {
   float: right;
   margin-right: .75em;
   margin-top: .5em;
 }
-.column1, .column3, .column5, .column7{
-    width: 13%;
-    float: left;
-    margin: 1%;
-}
-.column2, .column4, .column6, .column8 {
-  width: 32%;
-  float: left;
-  margin-top: 1%;
-  margin-right: 1%;
-  margin-bottom: -1%;
-  margin-left: 1%;
-}
-img {
-    float: right;    
-}
+
 /* figcaption {
   color: #EAE6DA;
 } */
@@ -159,25 +254,6 @@ img {
  */
 
 
-.Donna1 {
-  border: 3px solid black;
-}
-
-hr {
-  width: 100%; margin-top: -2em;  margin-left: auto; margin-right: auto; margin-bottom: 3em; height: 2em; background-color: #C79A3F;
-}
-.article {
-    height: 15em;
-    margin-bottom: 2em;
-    background-color: transparent;
-}
-#footer {
-  margin-top: 5em;
-  display: block;
-  height: 75px;
-  background-color:  #394D56;
-  float: center;
-}
 /* 
 li {
     display: inline;
