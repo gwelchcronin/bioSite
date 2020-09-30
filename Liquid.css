@@ -6,16 +6,19 @@
 #EAE7DA
 #C2B2A4 */
 
+
 /* size of page and color */
 body {
-  width: 100%;
+  min-width: 100%;
   height: auto;
   margin: 0 auto;
   background-color: #EAE6DA;
+  overflow-x: hidden;
 }
 
 /* header styling */
 #header {
+  position: relative; top: -55px;
   width: 100%;
   height: 140px;
   background-color:  #394D56;
@@ -110,6 +113,23 @@ p {
     padding: 1em;
     overflow:scroll;
 }
+ /* making scrollbars show all the time */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.089);
+}
+
+
 /* styling of first word in each narrative column */
 .firstword {
   color: #C79A3F;
@@ -129,41 +149,46 @@ p {
 
 /* photo columns */
 .column1, .column3, .column5, .column7{
-  width: 15%;
+  width: 14%;
   float: left;
+  margin-left: 6em;
 }
 
 /* narrative columns */
 .column2, .column4, .column6, .column8 {
   width: 25%;
   float: left;
+  margin-left: 1em;
 }
 
-/* spacing between the columns vertically */
+/* spacing between the columns */
 .column1, .column2, .column3, .column4 {
-  margin-top: 3%;
-  margin-bottom: 3%;
   margin-bottom: -.5em;
   margin-top: 5em;
 }
 
 .column5, .column6, .column7, .column8 {
-  margin-top: 3%;
-  margin-bottom: 3%;
   margin-bottom: -1em;
   margin-top: 5em;
 }
 
+
 /* image position */
 img {
   float: right;
+  max-width: 100%;
 }
+
 
 /* image styling */
 .Donna1 {
+  background: url("images/Donna2.jpg") no-repeat;
   border: 3px solid black;
 }
-
+.Donna1:hover {
+  background: url("images/Donna2.jpg") no-repeat;
+  border: 3px solid black;
+}
 
 
 /* styling of footer */
