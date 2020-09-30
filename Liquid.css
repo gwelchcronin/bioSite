@@ -195,10 +195,22 @@ img {
 #footer {
     margin-top: 20em;
     display: block;
-    height: 75px;
+    height: 90px;
     background-color:  #394D56;
     overflow: hidden;
   /* float: center; */
+}
+/* footer book club button */
+.footerleft {
+  float: left;
+  margin-left: .9em;
+  margin-top: .75em;
+}
+/* footer book list button */
+.footerright {
+  float: right;
+  margin-right: .9em;
+  margin-top: .75em;
 }
 
 /* button styling for top and footer nav */
@@ -211,7 +223,7 @@ button {
   border: none;
   color: black;
   margin-left: -.5em;
-  margin-top: -1.5em;
+  margin-top: -1.75em;
   margin-right: 1em;
   margin-bottom: 4em;
   text-align: center;
@@ -229,18 +241,6 @@ button:visited {
   color: #A4B7BA;
   background-color: #EAE6DA;
   text-decoration: none;
-}
-/* footer book club button */
-.footerleft {
-  float: left;
-  margin-left: .75em;
-  margin-top: .5em;
-}
-/* footer book list button */
-.footerright {
-  float: right;
-  margin-right: .75em;
-  margin-top: .5em;
 }
 
 /* figcaption {
