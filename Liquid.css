@@ -20,7 +20,7 @@ body {
 #header {
   position: relative; top: -55px;
   width: 100%;
-  height: 140px;
+  height: auto;
   background-color:  #394D56;
   color: #EAE6DA;
   margin: 0 auto;
@@ -32,7 +32,7 @@ body {
   margin-bottom: 0px;
 }
 .booksimage {
-  margin-top: 4em;
+  margin-top: 1em;
   margin-right: 2.5%;
   margin-bottom: -.5em;
   margin-left: 1%;
@@ -62,34 +62,50 @@ hr {
 }
 
 /* page styling after header and large image */
-#content {
-  height: 800px;
-}
+/* #content {
+  height: 1000px;
+} */
+
+
 /* position of the horizontal rule - bookshelves */
 .hr1  {
   margin-top: -2em; 
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 .hr2 {
-  margin-top: -5em; 
-  margin-bottom: 10em;
+  margin-top: -3.em; 
+  margin-bottom: 5em;
 }
 .hr3 {
-  margin-top: -2em; 
-  margin-bottom: 0em;
+  margin-top: 0em; 
+  margin-bottom: -5em;
 }
 
   /* size of containers for images and narrative text */
   .article {
     height: 350px;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-right: 2%;
-    margin-bottom: -1%;
+    margin-bottom: 0%;
     margin-left: 2%;
     background-color: transparent;
   }
 
+  /* size of containers for blank spacing and sub-headers */
+ .articles {
+  height: 40px;
+  margin-top: -1%;
+  margin-right: 2%;
+  margin-bottom: 0%;
+  margin-left: 2%;
+  background-color: transparent;
+ } 
+
+
+
 /* TEXT STYLING */
+
+
 
 /* styling of header text */
 h1 {
@@ -100,16 +116,29 @@ h1 {
   margin-top: 1em;
   margin-bottom: 0em;
   padding-top: .5em;
+  padding-bottom: 1em;
+}
+
+/* styling of sub-headers */
+h2 {
+  color: #C79A3F;
+  font-size: 2.5em; /* 30px/16=1.875em */
+  font-family: 'Alice', serif;
+  font-weight: 550;
+  padding-left: .5em;
 }
 
 /* normal text (narrative) styling */
 p {
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: 'Alice', serif;
     font-weight: 400;
-    line-height: 1.6em;
-    max-height: 285px;
-    padding: 1em;
+    line-height: 1.75em;
+    max-height: 350px;
+    padding-top: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .-25em;
     overflow:scroll;
 }
  /* making scrollbars show all the time */
@@ -128,23 +157,25 @@ p {
   background-color: rgba(0, 0, 0, 0.089);
 }
 
-
-/* styling of first word in each narrative column */
-.firstword {
-  color: #C79A3F;
-    font-size: 1.875em; /* 30px/16=1.875em */
-    font-family: 'Alice', serif;
-    font-weight: 550;
-    margin-left: 0px;
-    margin-bottom: .5em; 
-  }
-
 /* styling of book club and book list in narrative column4 */
 .colortext {
   color: #C79A3F;
   font-weight: bolder;
   }
 
+/* blank header columns for spacing */
+.column00, .column02, .column04, .column07 {
+  width: 14%;
+  float: left;
+  margin-left: 6em;
+}
+
+/* header column */
+.column01, .column03, .column05, .column08  {
+  width: 25%;
+  float: left;
+  margin-left: 1em;
+}
 
 /* photo columns */
 .column1, .column3, .column5, .column7{
@@ -167,7 +198,7 @@ p {
 }
 
 .column5, .column6, .column7, .column8 {
-  margin-bottom: -1em;
+  margin-bottom: -.5em;
   margin-top: 5em;
 }
 
@@ -178,20 +209,6 @@ img {
   max-width: 100%;
 }
 
-
-/* image styling */
-/* .Donna1 {
-  background: url("images/Donna2.jpg") no-repeat;
-  float: right;
-  max-width: 100%;
-  border: 3px solid black;
-}
-.Donna1:hover {
-  background: url("images/Donna1.jpg") no-repeat;
-  float: right;
-  max-width: 100%;
-  border: 3px solid black;
-} */
 .Donna1, .Donna2, .Donna3, .Donna4 {
   border: 3px solid black;
   border-radius: 4%;
@@ -212,7 +229,7 @@ img {
 
 /* styling of footer */
 #footer {
-    margin-top: 20em;
+    margin-top: 18em;
     display: block;
     height: 90px;
     background-color:  #394D56;
@@ -232,6 +249,12 @@ img {
   margin-top: .75em;
 }
 
+/* button position for top nav */
+.topnav {
+  margin-top: -3.5em;
+}
+
+
 /* button styling for top and footer nav */
 button {
   width: 140px;
@@ -242,7 +265,7 @@ button {
   border: none;
   color: black;
   margin-left: -.5em;
-  margin-top: -1.75em;
+  margin-top: -.75em;
   margin-right: 1em;
   margin-bottom: 4em;
   text-align: center;
